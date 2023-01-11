@@ -1,0 +1,41 @@
+.nav {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    .navItems {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vw;
+
+        // .navlogo {
+
+        // }
+
+        .navlinks {
+            width: 45vw;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navlinks > * {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navlinks > *:hover {
+            text-decoration: underline;
+        }
+
+        .navButton {
+            padding: 9px 16px;
+            font-size: 14px;
+            border-radius: 25px;
+            border: none;
+            background-color: white;
+
+        }
+    }
+}
