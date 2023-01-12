@@ -1,0 +1,24 @@
+.fanSec {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100vw;
+    // height: 100vh;
+    background-color: #FEFEFF;
+
+    padding: 100px 30px 80px 30px;
+
+    .message {
+        width: 363px;
+        color: #22272B;
+        height: 422px;
+        .title {
+            font-size: 48px;
+            font-weight: 800;
+        }
+
+        .text {
+            line-height: 25px;
+        }
+    }
+}

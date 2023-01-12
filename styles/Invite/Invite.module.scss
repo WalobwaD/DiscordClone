@@ -1,6 +1,6 @@
 .inviteSec {
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     background-color: white;
     color: black;
 
@@ -8,6 +8,8 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+
+    padding: 80px 0 80px 0;
 
     .photo {
         max-width: 678px;

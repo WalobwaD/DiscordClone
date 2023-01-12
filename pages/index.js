@@ -5,6 +5,8 @@ import styles from '../styles/Index.module.scss'
 import Content from '../components/Home/Content'
 import Invite from '../components/Invite/Invite'
 import Calls from '../components/calls/Calls'
+import Fandom from '../components/fandom/Fandom'
+import Ready from '../components/ready/Ready'
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         <Content/>
         <Invite />
         <Calls/>
+        <Fandom/>
+        <Ready/>
 
       </main>
     </>
