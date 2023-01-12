@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
+
 import styles from '../styles/Index.module.scss'
-import back1 from "../public/8a8375ab7908384e1fd6efe408284203.svg"
-import back2 from "../public/c40c84ca18d84633a9d86b4046a91437.svg"
+
 import Content from '../components/Home/Content'
+import Invite from '../components/Invite/Invite'
+import Calls from '../components/calls/Calls'
 
 export default function Home() {
   return (
@@ -15,17 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Image 
-          src={back1}
-          alt="backimage"
-          className={styles.back1}
-        />
-        <Image 
-          src={back2}
-          alt="backimage"
-          className={styles.back2}
-        />
+
         <Content/>
+        <Invite />
+        <Calls/>
 
       </main>
     </>

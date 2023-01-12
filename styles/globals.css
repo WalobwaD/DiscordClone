@@ -2,11 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  background-image: url("../public/e6d57714479874c665b36c7adee76b1d.svg");
-  background-color:mediumblue;
   overflow-x: hidden;
 }

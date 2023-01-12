@@ -1,0 +1,24 @@
+.callSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: #F7F7F6;
+    width: 100vw;
+    height: 100vh;
+    padding: 150px 60px 0 60px;
+
+    .message{
+        width: 397px;
+        height: 257px;
+        .title {
+            font-size: 48px;
+            color: #23262B;
+            font-weight: 800;
+        }
+        .text {
+            color: #23262B;
+        }
+    }
+}
