@@ -38,7 +38,14 @@
             font-weight: 500;
             border: none;
             background-color: white;
+            cursor: pointer;
+            transition: color 0.5s;
 
+        }
+
+        .navButton:hover {
+            color: #404FEC;
+            box-shadow: 0 5px 10px #23262B;
         }
     }
 }

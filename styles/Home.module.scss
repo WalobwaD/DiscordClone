@@ -1,27 +1,33 @@
 .homeSec {
-    max-width: 100vw;
+    width: 100%;
     min-height: 626px;
     background-color:#404FEC;
     color: white;
     padding: 0 40px 0 40px;
     background-image: url("../public/e6d57714479874c665b36c7adee76b1d.svg");
+    background-size: cover;
     z-index:0;
 
     // display: flex;
+    // align-items: center;
+    // justify-content: center;
     // flex-direction: column;
     // flex-wrap: wrap;
-    // overflow: hidden;
+
     .back1 {
-        position: absolute;
+        position:absolute;
         bottom: 0;
-        left: -350px;
+        left: 50%;
+        margin-left: -1030px;
+        z-index: 0;
     }
 
     .back2 {
         position: absolute;
         bottom: 0;
-        right: -310px;
-
+        left: 50%;
+        margin: 0 0 0 370px;
+        z-index: 0;
     }
 
     .content {
@@ -61,6 +67,7 @@
             align-items: center;
             flex-wrap: wrap;
             font-size: 20px;
+            z-index: 1;
 
             .button1 {
                 margin: 10px 40px 0 40px;
@@ -74,6 +81,7 @@
                 font-weight: 500;
                 line-height: 24px;
                 font-size: 20px;
+                cursor: pointer;
                 
                 .icon {
                     width: 20px;
@@ -91,7 +99,15 @@
                 font-weight: 500;
                 line-height: 24px;
                 font-size: 20px;
+                cursor: pointer;
 
+            }
+            .button1:hover {
+                color: #404FEC;
+                box-shadow: 0 5px 10px #232628;
+            }
+            .button2:hover {
+                box-shadow: 0 5px 20px white ;
             }
         }
 
@@ -101,8 +117,6 @@
 @media screen and (max-width:1023px) {
 
     .homeSec{
-        width: 100vw;
-        height: 100vh;
         overflow:hidden;
 
         .back1 {

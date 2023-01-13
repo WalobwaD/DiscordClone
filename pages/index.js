@@ -8,6 +8,8 @@ import Calls from '../components/calls/Calls'
 import Fandom from '../components/fandom/Fandom'
 import Ready from '../components/ready/Ready'
 
+import {motion} from "framer-motion"
+
 export default function Home() {
   return (
     <>
@@ -19,11 +21,11 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
 
-        <Content/>
-        <Invite />
-        <Calls/>
-        <Fandom/>
-        <Ready/>
+        <Content motion={motion}/>
+        <Invite motion={motion}/>
+        <Calls motion={motion}/>
+        <Fandom motion={motion}/>
+        <Ready motion={motion}/>
 
       </main>
     </>

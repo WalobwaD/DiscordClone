@@ -1,11 +1,15 @@
 import Link from "next/link"
 import styles from "../../../styles/NavStyles/NavBar.module.scss"
 
-const NavBar = ()=> {
+const NavBar = ({motion})=> {
     return (
         <nav className={styles.nav}>
             <div className={styles.navItems}>
-                <div className={styles.navlogo}>
+                <motion.div 
+                    initial = {{opacity: 0.1}}
+                    whileInView = {{opacity:1}}
+                    transition = {{duration: 1}}
+                    className={styles.navlogo}>
                     <svg 
                     width="124" 
                     height="34" 
@@ -17,8 +21,12 @@ const NavBar = ()=> {
                         </path>
                         </g>
                     </svg>
-                </div>
-                <div className={styles.navlinks}>
+                </motion.div>
+                <motion.div 
+                    initial = {{y:'-100vh'}}    
+                    animate = {{y:0}}
+                    transition = {{type: 'spring', duration: 1, bounce:0.3}}            
+                    className={styles.navlinks}>
                     <Link href="">Download</Link>
                     <Link href="">Nitro</Link>
                     <Link href="">Discover</Link>
@@ -26,8 +34,16 @@ const NavBar = ()=> {
                     <Link href="">Support</Link>
                     <Link href="">Blog</Link>
                     <Link href="">Career</Link>
-                </div>
-                <button className={styles.navButton}>Open Discord</button>
+                </motion.div>
+                <motion.button 
+                    whileHover = {{scale:1.1}}
+                    whileTap = {{
+                        scale:0.9,
+                        transition : {duration:0.4},                    
+                    }}
+                    className={styles.navButton}>
+                    Open Discord
+                </motion.button>
             </div>
         </nav>
     )
